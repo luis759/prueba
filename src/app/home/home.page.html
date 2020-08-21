@@ -1,0 +1,19 @@
+<ion-header [translucent]="true" *ngIf="cameras">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="cameras">
+  <ion-card >
+    <ion-card-header (click)="subirfoto()">
+      <ion-img [src]="foto" style="width: 100%;height: 400px;"></ion-img>
+    </ion-card-header>
+  </ion-card>
+  <ion-button (click)="mostrarcamara()">Camera Prueba</ion-button>
+  <ion-button (click)="selectimagen()">Seleccionar Prueba</ion-button>
+  <ion-button (click)="selectimagen2()">Seleccionar Prueba (2)</ion-button>
+  <ion-button (click)="selectimagen2()">Seleccionar Prueba (3)</ion-button>
+</ion-content>
